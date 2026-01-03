@@ -157,14 +157,17 @@ p {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    letter-spacing: -0.05em;
-    color: var(--text-main);
+    display: flex;
+    align-items: center;
+    height: 60px;
+    /* Adjust based on navbar height */
 }
 
-.logo .dot {
-    color: var(--primary-color);
+.logo img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    border-radius: 12px;
 }
 
 .nav-links {
@@ -671,7 +674,9 @@ footer {
     margin-top: 8px;
     font-size: 1rem;
     color: #718096;
-}/* Footer Contact Section */
+}
+
+/* Footer Contact Section */
 .footer-contact {
     display: flex;
     flex-direction: column;
