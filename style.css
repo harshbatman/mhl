@@ -833,3 +833,9 @@ footer {
     border-color: transparent;
     box-shadow: 0 4px 15px rgba(0, 119, 181, 0.4);
 }
+
+.x-twitter:hover {
+    background-color: #000000;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
