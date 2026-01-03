@@ -827,3 +827,9 @@ footer {
     border-color: transparent;
     box-shadow: 0 4px 15px rgba(255, 0, 0, 0.4);
 }
+
+.linkedin:hover {
+    background-color: #0077B5;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(0, 119, 181, 0.4);
+}
