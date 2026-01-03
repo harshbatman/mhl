@@ -771,3 +771,51 @@ footer {
         width: 100%;
     }
 }
+
+/* Footer Social */
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.footer-social h3 {
+    color: var(--white);
+    font-size: 1.5rem;
+    margin-bottom: 24px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 24px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icon span {
+    font-weight: 500;
+}
+
+.social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.instagram:hover {
+    background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(225, 48, 108, 0.4);
+}
