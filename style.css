@@ -226,6 +226,13 @@ p {
     margin-top: 32px;
 }
 
+.hero-store-buttons {
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
 .hero-visual {
     flex: 1;
     position: relative;
@@ -569,6 +576,10 @@ footer {
 
     .hero-text {
         margin-bottom: 40px;
+    }
+
+    .hero-store-buttons {
+        justify-content: center;
     }
 
     .cta-group {
