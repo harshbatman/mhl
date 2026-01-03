@@ -722,8 +722,7 @@ footer {
     height: 48px;
     background-color: rgba(128, 90, 213, 0.2);
     /* Purple tint */
-    color: transparent;
-    text-shadow: 0 0 0 white;
+    color: #FFFFFF;
     /* Lighter Purple */
     border-radius: 12px;
     display: flex;
@@ -733,6 +732,12 @@ footer {
     flex-shrink: 0;
     margin-bottom: 0;
     /* Override generic icon-box margin */
+}
+
+/* Force User Icon to be white (override default emoji blue) */
+.contact-card:last-child .icon-box {
+    color: transparent;
+    text-shadow: 0 0 0 white;
 }
 
 .contact-info {
