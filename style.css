@@ -839,3 +839,9 @@ footer {
     border-color: transparent;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
 }
+
+.reddit:hover {
+    background-color: #FF4500;
+    border-color: transparent;
+    box-shadow: 0 4px 15px rgba(255, 69, 0, 0.4);
+}
