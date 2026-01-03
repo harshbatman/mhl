@@ -777,8 +777,69 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 32px;
+}
+
+/* Footer Download */
+.footer-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 48px;
 }
+
+.footer-download h3 {
+    color: var(--white);
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.store-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #000;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 8px 16px;
+    border-radius: 8px;
+    color: var(--white);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    min-width: 160px;
+}
+
+.store-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    border-color: var(--white);
+}
+
+.btn-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.small-text {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+}
+
+.big-text {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Other Social Icons */
+
 
 .footer-social h3 {
     color: var(--white);
