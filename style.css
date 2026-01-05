@@ -778,53 +778,82 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .contact-card {
+    /* Prevent horizontal overflow */
+    html, body {
+        overflow-x: hidden;
         width: 100%;
+        max-width: 100vw;
     }
 
-    /* Typography */
+    /* Typography with proper scaling */
     h1 {
-        font-size: 2rem;
+        font-size: 1.875rem;
+        line-height: 1.2;
+        word-wrap: break-word;
     }
 
     h2 {
-        font-size: 1.75rem;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        word-wrap: break-word;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+        word-wrap: break-word;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        word-wrap: break-word;
     }
 
-    /* Container */
+    /* Container with better mobile spacing */
     .container {
-        padding: 0 16px;
+        padding: 0 20px;
+        max-width: 100%;
+    }
+
+    /* Hero Section Mobile */
+    .hero {
+        padding-top: 120px;
+        padding-bottom: 60px;
     }
 
     /* Grid Layouts */
     .grid-3,
     .grid-2 {
         grid-template-columns: 1fr;
-        gap: 24px;
+        gap: 20px;
     }
 
     /* Hero Visual */
     .hero-visual {
-        height: 250px;
+        height: 280px;
+        width: 100%;
     }
 
     .glass-card {
         padding: 12px 16px;
+        font-size: 0.875rem;
+    }
+
+    .glass-card .value {
+        font-size: 0.95rem;
     }
 
     /* Buttons */
     .cta-group {
         flex-direction: column;
         width: 100%;
+        gap: 12px;
     }
 
     .btn {
         width: 100%;
         text-align: center;
+        padding: 12px 24px;
     }
 
     /* Hero Store Buttons */
@@ -836,13 +865,28 @@ footer {
 
     /* CTA Box */
     .cta-box {
-        padding: 48px 24px;
+        padding: 48px 20px;
+        border-radius: 16px;
     }
 
     .btn-large {
         padding: 14px 32px;
         font-size: 1rem;
         width: 100%;
+    }
+
+    /* Logo Mobile Sizing */
+    .logo {
+        height: 70px;
+    }
+
+    /* Navbar Mobile */
+    .navbar {
+        padding: 16px 0;
+    }
+
+    .navbar.scrolled {
+        padding: 12px 0;
     }
 
     /* Footer */
@@ -853,7 +897,7 @@ footer {
 
     .footer-links {
         flex-direction: column;
-        gap: 32px;
+        gap: 24px;
     }
 
     /* Footer Contact Cards */
@@ -866,6 +910,7 @@ footer {
     .contact-card {
         width: 100%;
         min-width: 0;
+        padding: 20px;
     }
 
     /* Footer Store Buttons */
@@ -887,26 +932,86 @@ footer {
     .social-icons {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 12px;
+    }
+
+    .social-icon {
+        width: 44px;
+        height: 44px;
     }
 
     /* Footer Download */
     .footer-download h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     /* Footer Social Heading */
     .footer-social h3 {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
     }
 
     /* Sections */
     .section {
-        padding: 60px 0;
+        padding: 50px 0;
+    }
+
+    .section-header {
+        margin-bottom: 40px;
     }
 
     /* Cards */
     .card {
-        padding: 28px 20px;
+        padding: 24px 18px;
+    }
+
+    .card h3 {
+        font-size: 1.25rem;
+    }
+
+    /* Icon boxes */
+    .icon-box {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+    }
+
+    /* Feature Items */
+    .feature-item {
+        gap: 16px;
+    }
+
+    /* Trust Section */
+    .trust {
+        padding: 60px 0;
+    }
+
+    .trust-grid {
+        gap: 24px;
+    }
+
+    /* CTA Final */
+    .cta-final {
+        padding: 60px 0;
+    }
+
+    /* Copyright Text */
+    .copyright p {
+        font-size: 0.85rem;
+        text-align: center;
+    }
+
+    /* Better touch targets */
+    a, button {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Smooth scrolling for mobile */
+    html {
+        scroll-behavior: smooth;
     }
 }
 
